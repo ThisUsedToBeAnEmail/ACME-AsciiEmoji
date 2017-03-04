@@ -188,7 +188,7 @@ our @EXPORT_OK = keys %EMOJI;
 
 =head1 NAME
 
-ACME::AsciiEmoji - Ascii Emoji's!
+ACME::AsciiEmoji - <--{ 
 
 =head1 VERSION
 
