@@ -3,6 +3,22 @@ package ACME::AsciiEmoji;
 use 5.006;
 use strict;
 use warnings;
+use Data::Dumper;
+use Exporter::Shiny;
+
+my %emojis = (
+    innocent => [   
+	      202,
+          152,
+          226,
+          128,
+          191,
+          202,
+          152
+    ],
+);
+
+our @EXPORT = keys %emojis;
 
 =head1 NAME
 
@@ -16,7 +32,6 @@ Version 0.01
 
 our $VERSION = '0.01';
 
-
 =head1 SYNOPSIS
 
 Quick summary of what the module does.
@@ -27,6 +42,19 @@ Perhaps a little code snippet.
 
     my $foo = ACME::AsciiEmoji->new();
     ...
+
+	my @nums = map { ord($_) } split '', $thing;
+=cut
+
+sub ascii_emoji {
+	my $emoj = $emojis{$_[0]};
+	return pack('A1' x scalar @{ $emoj }, map { chr($_) } @{ $emoj });
+}	
+
+sub innocent {
+	return ascii_emoji('innocent');
+}
+
 
 =head1 EXPORT
 
@@ -42,9 +70,6 @@ LNATION, C<< <thisusedtobeanemail at gmail.com> >>
 Please report any bugs or feature requests to C<bug-acme-asciiemoji at rt.cpan.org>, or through
 the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=ACME-AsciiEmoji>.  I will be notified, and then you'll
 automatically be notified of progress on your bug as I make changes.
-
-
-
 
 =head1 SUPPORT
 
