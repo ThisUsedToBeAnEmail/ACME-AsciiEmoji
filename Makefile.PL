@@ -17,10 +17,10 @@ WriteMakefile(
     },
     BUILD_REQUIRES => {
         'Test::More' => 0,
-        'Moonshine::Test' => 0,
+        'Moonshine::Test' => 0.10,
     },
     PREREQ_PM => {
-        'Importer::Tiny' => 0,
+        'Importer::Tiny' => 0.44,
         'strict' => 0,
         'warnings' => 0,
     },
