@@ -4,6 +4,8 @@ use strict;
 use warnings;
 use Exporter::Shiny;
 
+our $VERSION = '0.01';
+
 my %EMOJI = (
     innocent    => [ 202, 152, 226, 128, 191, 202, 152 ],
     disapproval => [ 224, 178, 160, 32,  95,  224, 178, 160 ],
@@ -198,7 +200,6 @@ Version 0.01
 
 =encoding utf8
 
-our $VERSION = '0.01';
 
 =head1 SYNOPSIS
 
