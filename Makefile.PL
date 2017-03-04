@@ -20,7 +20,7 @@ WriteMakefile(
         'Moonshine::Test' => 0.10,
     },
     PREREQ_PM => {
-        'Exporter::Tiny' => 0.44,
+        'Exporter::Tiny' => 0.044,
         'strict' => 0,
         'warnings' => 0,
     },
