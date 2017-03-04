@@ -16,6 +16,16 @@ my %emojis = (
           202,
           152
     ],
+    disapproval => [
+          224,
+          178,
+          160,
+          32,
+          95,
+          224,
+          178,
+          160
+    ],
 );
 
 our @EXPORT = keys %emojis;
@@ -43,7 +53,6 @@ Perhaps a little code snippet.
     my $foo = ACME::AsciiEmoji->new();
     ...
 
-	my @nums = map { ord($_) } split '', $thing;
 =cut
 
 sub ascii_emoji {
@@ -53,6 +62,10 @@ sub ascii_emoji {
 
 sub innocent {
 	return ascii_emoji('innocent');
+}
+
+sub disapproval {
+	return ascii_emoji('disapproval');
 }
 
 
