@@ -5,7 +5,7 @@ use ExtUtils::MakeMaker;
 
 WriteMakefile(
     NAME             => 'ACME::AsciiEmoji',
-    AUTHOR           => q{LNATION <thisusedtobeanemail@gmail.com>},
+    AUTHOR           => q{Robert Acock <thisusedtobeanemail@gmail.com>},
     VERSION_FROM     => 'lib/ACME/AsciiEmoji.pm',
     ABSTRACT_FROM    => 'lib/ACME/AsciiEmoji.pm',
     LICENSE          => 'artistic_2',
@@ -16,10 +16,12 @@ WriteMakefile(
     },
     BUILD_REQUIRES => {
         'Test::More' => 0,
+        'Moonshine::Test' => 0,
     },
     PREREQ_PM => {
-        #'ABC'              => 1.6,
-        #'Foo::Bar::Module' => 5.0401,
+        'Importer::Tiny' => 0,
+        'strict' => 0,
+        'warnings' => 0,
     },
     dist  => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean => { FILES => 'ACME-AsciiEmoji-*' },

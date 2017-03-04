@@ -1,12 +1,10 @@
 package ACME::AsciiEmoji;
 
-use 5.006;
 use strict;
 use warnings;
-use Data::Dumper;
 use Exporter::Shiny;
 
-my %emojis = (
+my %EMOJI = (
     innocent    => [ 202, 152, 226, 128, 191, 202, 152 ],
     disapproval => [ 224, 178, 160, 32,  95,  224, 178, 160 ],
     table_flip => [
@@ -185,12 +183,12 @@ my %emojis = (
     ],
 );
 
-our @EXPORT    = keys %emojis;
-our @EXPORT_OK = keys %emojis;
+our @EXPORT    = keys %EMOJI;
+our @EXPORT_OK = keys %EMOJI;
 
 =head1 NAME
 
-ACME::AsciiEmoji - The great new ACME::AsciiEmoji!
+ACME::AsciiEmoji - Ascii Emoji's!
 
 =head1 VERSION
 
@@ -198,269 +196,681 @@ Version 0.01
 
 =cut
 
+=encoding utf8
+
 our $VERSION = '0.01';
 
 =head1 SYNOPSIS
 
-Quick summary of what the module does.
-
-Perhaps a little code snippet.
-
     use ACME::AsciiEmoji;
-    my $foo = ACME::AsciiEmoji->new();
     ...
+    print innocent;
+    # ʘ‿ʘ
+
+=cut
+
+=head1 EXPORT
 
 =cut
 
 sub ascii_emoji {
-    my $emoj = $emojis{ $_[0] };
+    my $emoj = $EMOJI{ $_[0] };
     return pack( 'A1' x scalar @{$emoj}, map { chr($_) } @{$emoj} );
 }
+
+=head2 innocent
+
+ʘ‿ʘ
+Innocent face 
+
+=cut
 
 sub innocent {
     return ascii_emoji('innocent');
 }
 
+=head2 disapproval
+
+ಠ_ಠ
+Reddit disapproval face 
+
+=cut
+
 sub disapproval {
     return ascii_emoji('disapproval');
 }
+
+=head2 table_flip
+
+(╯°□°）╯︵ ┻━┻
+Table Flip / Flipping Table 
+
+=cut
 
 sub table_flip {
     return ascii_emoji('table_flip');
 }
 
+=head2 put_the_table_back
+
+┬─┬ ノ( ゜-゜ノ)
+Put the table back
+
+=cut
+
 sub put_the_table_back {
     return ascii_emoji('put_the_table_back');
 }
+
+=head2 double_flip 
+
+┻━┻ ︵ヽ(`Д´)ﾉ︵ ┻━┻
+Double Flip / Double Angry
+
+=cut
 
 sub double_flip {
     return ascii_emoji('double_flip');
 }
 
+=head2 super_waving
+
+( ﾟ∀ﾟ)ｱﾊﾊ八八ﾉヽﾉヽﾉヽﾉ ＼ / ＼/ ＼
+Super waving
+
+=cut
+
 sub super_waving {
     return ascii_emoji('super_waving');
 }
+
+=head2 fistacuffs
+
+ლ(｀ー´ლ)
+Fistacuffs
+
+=cut
 
 sub fistacuffs {
     return ascii_emoji('fistacuffs');
 }
 
+=head2 cute_bear 
+
+ʕ•ᴥ•ʔ
+Cute bear 
+
+=cut
+
 sub cute_bear {
     return ascii_emoji('cute_bear');
 }
+
+=head2 big_eyes 
+
+(｡◕‿◕｡)
+Big eyes 
+
+=cut
 
 sub big_eyes {
     return ascii_emoji('big_eyes');
 }
 
+=head2 surprised
+
+（　ﾟДﾟ）
+surprised / loudmouthed 
+
+=cut
+
 sub surprised {
     return ascii_emoji('surprised');
 }
+
+=head2 shrug
+
+¯\_(ツ)_/¯
+shrug face  
+
+=cut
 
 sub shrug {
     return ascii_emoji('shrug');
 }
 
+=head2 meh
+
+¯\(°_o)/¯
+meh
+
+=cut
+
+
 sub meh {
     return ascii_emoji('meh');
 }
+
+=head2 feel_perky 
+
+(`･ω･´)
+feel perky  
+
+=cut
 
 sub feel_perky {
     return ascii_emoji('feel_perky');
 }
 
+=head2 angry 
+
+(╬ ಠ益ಠ)
+angry face
+
+=cut
+
 sub angry {
     return ascii_emoji('angry');
 }
+
+=head2 excited
+
+☜(⌒▽⌒)☞
+excited 
+
+=cut
 
 sub excited {
     return ascii_emoji('excited');
 }
 
+=head2 running
+
+ε=ε=ε=┌(;*´Д`)ﾉ
+running 
+
+=cut
+
 sub running {
     return ascii_emoji('running');
 }
+
+=head2 happy
+
+ヽ(´▽`)/
+happy face  
+
+=cut
 
 sub happy {
     return ascii_emoji('happy');
 }
 
+=head2 basking_in_glory
+
+ヽ(´ー｀)ノ
+basking in glory  
+
+=cut
+
 sub basking_in_glory {
     return ascii_emoji('basking_in_glory');
 }
+
+=head2 kitty
+
+ᵒᴥᵒ#
+kitty emote
+
+=cut
 
 sub kitty {
     return ascii_emoji('kitty');
 }
 
+=head2 meow
+
+ฅ^•ﻌ•^ฅ
+meow
+
+=cut
+
 sub meow {
     return ascii_emoji('meow');
 }
+
+=head2 cheers
+
+（ ^_^）o自自o（^_^ ）
+Cheers  
+
+=cut
 
 sub cheers {
     return ascii_emoji('cheers');
 }
 
+=head2 devious
+
+ಠ‿ಠ
+devious smile
+
+=cut
+
 sub devious {
     return ascii_emoji('devious');
 }
+
+=head2 chan
+
+( ͡° ͜ʖ ͡°)
+4chan emoticon  
+
+=cut
 
 sub chan {
     return ascii_emoji('chan');
 }
 
+=head2 disagree
+
+٩◔̯◔۶
+disagree
+
+=cut
+
 sub disagree {
     return ascii_emoji('disagree');
 }
+
+=head2 flexing
+
+ᕙ(⇀‸↼‶)ᕗ
+flexing 
+
+=cut
 
 sub flexing {
     return ascii_emoji('flexing');
 }
 
+=head2 do_you_lift_bro
+
+ᕦ(ò_óˇ)ᕤ
+do you even lift bro?
+
+=cut
+
 sub do_you_lift_bro {
     return ascii_emoji('do_you_lift_bro');
 }
+
+=head2 kirby
+
+⊂(◉‿◉)つ
+kirby
+
+=cut
 
 sub kirby {
     return ascii_emoji('kirby');
 }
 
+=head2 tripping_out
+
+q(❂‿❂)p
+tripping out  
+
+=cut
+
 sub tripping_out {
     return ascii_emoji('tripping_out');
 }
+
+=head2 discombobulated
+
+⊙﹏⊙
+discombobulated 
+
+=cut
 
 sub discombobulated {
     return ascii_emoji('discombobulated');
 }
 
+=head2 sad_shrug
+
+¯\_(⊙︿⊙)_/¯
+sad and confused  
+
+=cut
+
 sub sad_shrug {
     return ascii_emoji('sad_shrug');
 }
+
+=head2 confused
+
+¿ⓧ_ⓧﮌ
+confused  
+
+=cut
 
 sub confused {
     return ascii_emoji('confused');
 }
 
+=head2 confused_scratch
+
+(⊙.☉)7
+confused scratch
+
+=cut
+
 sub confused_scratch {
     return ascii_emoji('confused_scratch');
 }
+
+=head2 worried
+
+(´･_･`)
+worried
+
+=cut
 
 sub worried {
     return ascii_emoji('worried');
 }
 
+=head2 dear_god_why
+
+щ（ﾟДﾟщ）
+dear god why  
+
+=cut
+
 sub dear_god_why {
     return ascii_emoji('dear_god_why');
 }
+
+=head2 staring
+
+٩(͡๏_๏)۶
+staring 
+
+=cut
 
 sub staring {
     return ascii_emoji('staring');
 }
 
+=head2 strut
+
+ᕕ( ᐛ )ᕗ
+strut
+
+=cut
+
 sub strut {
     return ascii_emoji('strut');
 }
+
+=head2 zoned
+
+(⊙_◎)
+zoned
+
+=cut
 
 sub zoned {
     return ascii_emoji('zoned');
 }
 
+=head2 crazy
+
+ミ●﹏☉ミ
+crazy
+
+=cut
+
 sub crazy {
     return ascii_emoji('crazy');
 }
+
+=head2 trolling
+
+༼∵༽ ༼⍨༽ ༼⍢༽ ༼⍤༽
+trolling
+
+=cut
 
 sub trolling {
     return ascii_emoji('trolling');
 }
 
+=head2 angry_troll
+
+ヽ༼ ಠ益ಠ ༽ﾉ
+angry troll
+
+=cut
+
 sub angry_troll {
     return ascii_emoji('angry_troll');
 }
+
+=head2 hugger
+
+(づ￣ ³￣)づ
+hugger
+
+=cut
 
 sub hugger {
     return ascii_emoji('hugger');
 }
 
+=head2 stranger_danger
+
+(づ｡◕‿‿◕｡)づ
+stranger danger
+
+=cut
+
 sub stranger_danger {
     return ascii_emoji('stranger_danger');
 }
+
+=head2 flip_friend
+
+(ノಠ ∩ಠ)ノ彡( \o°o)\
+flip friend
+
+=cut
 
 sub flip_friend {
     return ascii_emoji('flip_friend');
 }
 
+=head2 cry
+
+｡ﾟ( ﾟஇ‸இﾟ)ﾟ｡
+cry face
+
+=cut
+
 sub cry {
     return ascii_emoji('cry');
 }
+
+=head2 tgif
+
+“ヽ(´▽｀)ノ”
+TGIF
+
+=cut
 
 sub tgif {
     return ascii_emoji('tgif');
 }
 
+=head2 dancing
+
+┌(ㆆ㉨ㆆ)ʃ
+dancing 
+
+=cut
+
 sub dancing {
     return ascii_emoji('dancing');
 }
+
+=head2 sleepy
+
+눈_눈
+sleepy
+
+=cut
 
 sub sleepy {
     return ascii_emoji('sleepy');
 }
 
+=head2 fly_away
+
+⁽⁽ଘ( ˊᵕˋ )ଓ⁾⁾
+fly away
+
+=cut
+
 sub fly_away {
     return ascii_emoji('fly_away');
 }
+
+=head2 careless
+
+◔_◔
+careless
+
+=cut
 
 sub careless {
     return ascii_emoji('careless');
 }
 
+=head2 love
+
+♥‿♥
+love
+
+=cut
+
 sub love {
     return ascii_emoji('love');
 }
+
+=head2 touch
+
+ԅ(≖‿≖ԅ)
+Touchy Feely
+
+=cut
 
 sub touchy {
     return ascii_emoji('touchy');
 }
 
+=head2 robot
+  
+{•̃_•̃}
+robot
+
+=cut
+
 sub robot {
     return ascii_emoji('robot');
 }
+
+=head2 seal
+
+(ᵔᴥᵔ)
+seal
+``
+=cut
 
 sub seal {
     return ascii_emoji('seal');
 }
 
+=head2 questionable
+
+(Ծ‸ Ծ)
+questionable / dislike
+
+=cut
+
 sub questionable {
     return ascii_emoji('questionable');
 }
+
+=head2 winning
+
+(•̀ᴗ•́)و ̑̑
+Winning!
+
+=cut
 
 sub winning {
     return ascii_emoji('winning');
 }
 
+=head2 zombie
+
+[¬º-°]¬
+Zombie
+
+=cut
+
 sub zombie {
     return ascii_emoji('zombie');
 }
+
+=head2 pointing
+
+(☞ﾟヮﾟ)☞
+pointing
+
+=cut
 
 sub pointing {
     return ascii_emoji('pointing');
 }
 
+=head2 chasing
+
+''⌐(ಠ۾ಠ)¬'''
+chasing / running away
+
+=cut
+
 sub chasing {
     return ascii_emoji('chasing');
 }
+
+=head2 shy 
+
+(๑•́ ₃ •̀๑) 
+shy 
+
+=cut
 
 sub shy {
     return ascii_emoji('shy');
 }
 
-=head1 EXPORT
-
-A list of functions that can be exported.  You can delete this section
-if you don't export anything, such as for a purely object-oriented module.
-
 =head1 AUTHOR
 
-LNATION, C<< <thisusedtobeanemail at gmail.com> >>
+Robert Acock, C<< <thisusedtobeanemail at gmail.com> >>
 
 =head1 BUGS
 
@@ -497,9 +907,7 @@ L<http://search.cpan.org/dist/ACME-AsciiEmoji/>
 
 =back
 
-
 =head1 ACKNOWLEDGEMENTS
-
 
 =head1 LICENSE AND COPYRIGHT
 
@@ -540,7 +948,6 @@ YOUR LOCAL LAW. UNLESS REQUIRED BY LAW, NO COPYRIGHT HOLDER OR
 CONTRIBUTOR WILL BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, OR
 CONSEQUENTIAL DAMAGES ARISING IN ANY WAY OUT OF THE USE OF THE PACKAGE,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-
 
 =cut
 
