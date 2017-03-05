@@ -1,12 +1,10 @@
 # NAME
 
-Acme::AsciiEmoji - Ascii Emoji's!
+Acme::AsciiEmoji - <--{ 
 
 # VERSION
 
-Version 0.01
-
-our $VERSION = '0.01';
+Version 0.02
 
 # SYNOPSIS
 
