@@ -5,10 +5,10 @@ use ExtUtils::MakeMaker;
 use Module::Metadata;
 
 WriteMakefile(
-    NAME             => 'ACME::AsciiEmoji',
+    NAME             => 'Acme::AsciiEmoji',
     AUTHOR           => q{Robert Acock <thisusedtobeanemail@gmail.com>},
-    VERSION_FROM     => 'lib/ACME/AsciiEmoji.pm',
-    ABSTRACT_FROM    => 'lib/ACME/AsciiEmoji.pm',
+    VERSION_FROM     => 'lib/Acme/AsciiEmoji.pm',
+    ABSTRACT_FROM    => 'lib/Acme/AsciiEmoji.pm',
     LICENSE          => 'artistic_2',
     PL_FILES         => {},
     MIN_PERL_VERSION => 5.006,
@@ -25,14 +25,14 @@ WriteMakefile(
         'warnings' => 0,
     },
     dist  => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
-    clean => { FILES => 'ACME-AsciiEmoji-*' },
+    clean => { FILES => 'Acme-AsciiEmoji-*' },
     META_MERGE => {
         'meta-spec' => { version => 2 },
         resources => {
             repository => {
                 type => 'git',
-                url  => 'https://github.com/ThisUsedToBeAnEmail/ACME-AsciiEmoji.git',
-                web  => 'https://github.com/ThisUsedToBeAnEmail/ACME-AsciiEmoji',
+                url  => 'https://github.com/ThisUsedToBeAnEmail/Acme-AsciiEmoji.git',
+                web  => 'https://github.com/ThisUsedToBeAnEmail/Acme-AsciiEmoji',
             },
         },
     },

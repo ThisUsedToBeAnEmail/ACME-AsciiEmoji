@@ -1,333 +1,333 @@
 use Moonshine::Test qw/:all/;
-use ACME::AsciiEmoji;
+use Acme::AsciiEmoji;
 
 moon_test_one(
     test => 'scalar',
-    meth => \&ACME::AsciiEmoji::innocent,
+    meth => \&Acme::AsciiEmoji::innocent,
     expected => 'ʘ‿ʘ',
 );
 
 moon_test_one(
     test => 'scalar',
-    meth => \&ACME::AsciiEmoji::disapproval,
+    meth => \&Acme::AsciiEmoji::disapproval,
     expected => 'ಠ _ಠ',
 );
 
 moon_test_one(
     test => 'scalar',
-    meth => \&ACME::AsciiEmoji::table_flip,
+    meth => \&Acme::AsciiEmoji::table_flip,
     expected => '(╯°□°）╯︵ ┻━┻',
 );
 
 moon_test_one(
     test => 'scalar',
-    meth => \&ACME::AsciiEmoji::put_the_table_back,
+    meth => \&Acme::AsciiEmoji::put_the_table_back,
     expected => '┬─┬ノ( ゜-゜ノ)',
 );
 
 moon_test_one(
     test => 'scalar',
-    meth => \&ACME::AsciiEmoji::double_flip,
+    meth => \&Acme::AsciiEmoji::double_flip,
     expected => '┻━┻︵ヽ(`Д´)ﾉ︵┻━┻',
 );
 
 moon_test_one(
     test => 'scalar',
-    meth => \&ACME::AsciiEmoji::super_waving,
+    meth => \&Acme::AsciiEmoji::super_waving,
     expected => '( ﾟ∀ﾟ)ｱﾊﾊ八八ﾉヽﾉヽﾉヽﾉ ＼ / ＼/ ＼',
 );
 
 moon_test_one(
     test => 'scalar',
-    meth => \&ACME::AsciiEmoji::fistacuffs,
+    meth => \&Acme::AsciiEmoji::fistacuffs,
     expected => 'ლ(｀ー´ლ)',
 );
 
 moon_test_one(
     test => 'scalar',
-    meth => \&ACME::AsciiEmoji::cute_bear,
+    meth => \&Acme::AsciiEmoji::cute_bear,
     expected => 'ʕ•ᴥ•ʔ',
 );
 
 moon_test_one(
     test => 'scalar',
-    meth => \&ACME::AsciiEmoji::big_eyes,
+    meth => \&Acme::AsciiEmoji::big_eyes,
     expected => '(｡◕‿◕｡)',
 );
 
 moon_test_one(
     test => 'scalar',
-    meth => \&ACME::AsciiEmoji::surprised,
+    meth => \&Acme::AsciiEmoji::surprised,
     expected => '（　ﾟДﾟ）',
 );
 
 moon_test_one(
     test => 'scalar',
-    meth => \&ACME::AsciiEmoji::shrug,
+    meth => \&Acme::AsciiEmoji::shrug,
     expected => '¯\_(ツ)_/¯',
 );
 
 moon_test_one(
     test => 'scalar',
-    meth => \&ACME::AsciiEmoji::meh,
+    meth => \&Acme::AsciiEmoji::meh,
     expected => '¯\(°_o)/¯',
 );
 
 moon_test_one(
     test => 'scalar',
-    meth => \&ACME::AsciiEmoji::feel_perky,
+    meth => \&Acme::AsciiEmoji::feel_perky,
     expected => '(`･ω･´)',
 );
 
 moon_test_one(
     test => 'scalar',
-    meth => \&ACME::AsciiEmoji::angry,
+    meth => \&Acme::AsciiEmoji::angry,
     expected => '(╬ ಠ 益ಠ )',
 );
 
 moon_test_one(
     test => 'scalar',
-    meth => \&ACME::AsciiEmoji::excited,
+    meth => \&Acme::AsciiEmoji::excited,
     expected => '☜(⌒ ▽⌒ )☞',
 );
 
 moon_test_one(
     test => 'scalar',
-    meth => \&ACME::AsciiEmoji::running,
+    meth => \&Acme::AsciiEmoji::running,
     expected => 'ε=ε=ε=┌(;*´Д`)ﾉ',
 );
 
 moon_test_one(
     test => 'scalar',
-    meth => \&ACME::AsciiEmoji::happy,
+    meth => \&Acme::AsciiEmoji::happy,
     expected => 'ヽ(´▽ `)/',
 );
 
 moon_test_one(
     test => 'scalar',
-    meth => \&ACME::AsciiEmoji::basking_in_glory,
+    meth => \&Acme::AsciiEmoji::basking_in_glory,
     expected => 'ヽ(´ー｀)ノ',
 );
 
 moon_test_one(
     test => 'scalar',
-    meth => \&ACME::AsciiEmoji::kitty,
+    meth => \&Acme::AsciiEmoji::kitty,
     expected => 'ᵒᴥᵒ#',
 );
 
 moon_test_one(
     test => 'scalar',
-    meth => \&ACME::AsciiEmoji::meow,
+    meth => \&Acme::AsciiEmoji::meow,
     expected => 'ฅ^•ﻌ•^ฅ',
 );
 
 moon_test_one(
     test => 'scalar',
-    meth => \&ACME::AsciiEmoji::cheers,
+    meth => \&Acme::AsciiEmoji::cheers,
     expected => '（ ^_^）o自自o（^_^ ）',
 );
 
 moon_test_one(
     test => 'scalar',
-    meth => \&ACME::AsciiEmoji::chan,
+    meth => \&Acme::AsciiEmoji::chan,
     expected => '( ͡° ͜ʖ ͡°)',
 );
 
 moon_test_one(
     test => 'scalar',
-    meth => \&ACME::AsciiEmoji::disagree,
+    meth => \&Acme::AsciiEmoji::disagree,
     expected => '٩◔̯◔۶',
 );
 
 moon_test_one(
     test => 'scalar',
-    meth => \&ACME::AsciiEmoji::do_you_lift_bro,
+    meth => \&Acme::AsciiEmoji::do_you_lift_bro,
     expected => 'ᕦ(ò_óˇ)ᕤ',
 );
 
 moon_test_one(
     test => 'scalar',
-    meth => \&ACME::AsciiEmoji::kirby,
+    meth => \&Acme::AsciiEmoji::kirby,
     expected => '⊂(◉‿◉)つ',
 );
 
 moon_test_one(
     test => 'scalar',
-    meth => \&ACME::AsciiEmoji::tripping_out,
+    meth => \&Acme::AsciiEmoji::tripping_out,
     expected =>'q(❂‿❂)p'
 );
 
 moon_test_one(
     test => 'scalar',
-    meth => \&ACME::AsciiEmoji::discombobulated,
+    meth => \&Acme::AsciiEmoji::discombobulated,
     expected =>'⊙﹏⊙',
 );
 
 moon_test_one(
     test => 'scalar',
-    meth => \&ACME::AsciiEmoji::sad_shrug,
+    meth => \&Acme::AsciiEmoji::sad_shrug,
     expected => '¯\_(⊙ ︿⊙)_/¯',
 );
 
 moon_test_one(
     test => 'scalar',
-    meth => \&ACME::AsciiEmoji::confused,
+    meth => \&Acme::AsciiEmoji::confused,
     expected => '¿ⓧ_ⓧﮌ',
 );
 
 moon_test_one(
     test => 'scalar',
-    meth => \&ACME::AsciiEmoji::confused_scratch,
+    meth => \&Acme::AsciiEmoji::confused_scratch,
     expected => '(⊙.☉)7',
 );
 
 moon_test_one(
     test => 'scalar',
-    meth => \&ACME::AsciiEmoji::dear_god_why,
+    meth => \&Acme::AsciiEmoji::dear_god_why,
     expected => 'щ（ﾟДﾟщ）',
 );
 
 moon_test_one(
     test => 'scalar',
-    meth => \&ACME::AsciiEmoji::strut,
+    meth => \&Acme::AsciiEmoji::strut,
     expected => 'ᕕ( ᐛ )ᕗ',
 );
 
 moon_test_one(
     test => 'scalar',
-    meth => \&ACME::AsciiEmoji::zoned,
+    meth => \&Acme::AsciiEmoji::zoned,
     expected => '(⊙_◎)',
 );
 
 moon_test_one(
     test => 'scalar',
-    meth => \&ACME::AsciiEmoji::crazy,
+    meth => \&Acme::AsciiEmoji::crazy,
     expected => 'ミ●﹏☉ミ',
 );
 
 moon_test_one(
     test => 'scalar',
-    meth => \&ACME::AsciiEmoji::trolling,
+    meth => \&Acme::AsciiEmoji::trolling,
     expected => ' ༼∵༽ ༼⍨༽ ༼⍢༽ ༼⍤༽'
 );
 
 moon_test_one(
     test => 'scalar',
-    meth => \&ACME::AsciiEmoji::angry_troll,
+    meth => \&Acme::AsciiEmoji::angry_troll,
     expected => 'ヽ༼ ಠ益ಠ ༽ﾉ',
 );
 
 moon_test_one(
     test => 'scalar',
-    meth => \&ACME::AsciiEmoji::hugger,
+    meth => \&Acme::AsciiEmoji::hugger,
     expected => '(づ￣ ³￣)づ',
 );
 
 moon_test_one(
     test => 'scalar',
-    meth => \&ACME::AsciiEmoji::stranger_danger,
+    meth => \&Acme::AsciiEmoji::stranger_danger,
     expected => '(づ｡◕‿‿◕｡)づ',
 );
 
 moon_test_one(
     test => 'scalar',
-    meth => \&ACME::AsciiEmoji::flip_friend,
+    meth => \&Acme::AsciiEmoji::flip_friend,
     expected => '(ノಠ ∩ಠ)ノ彡( \o°o)\ ',
 );
 
 moon_test_one(
     test => 'scalar',
-    meth => \&ACME::AsciiEmoji::cry,
+    meth => \&Acme::AsciiEmoji::cry,
     expected => '｡ﾟ( ﾟஇ‸இﾟ)ﾟ｡',
 );
 
 moon_test_one(
     test => 'scalar',
-    meth => \&ACME::AsciiEmoji::tgif,
+    meth => \&Acme::AsciiEmoji::tgif,
     expected => '“ヽ(´▽｀)ノ”',
 );
 
 moon_test_one(
     test => 'scalar',
-    meth => \&ACME::AsciiEmoji::dancing,
+    meth => \&Acme::AsciiEmoji::dancing,
     expected => '┌(ㆆ㉨ㆆ)ʃ',
 );
 
 moon_test_one(
     test => 'scalar',
-    meth => \&ACME::AsciiEmoji::sleepy,
+    meth => \&Acme::AsciiEmoji::sleepy,
     expected => '눈_눈',
 );
 
 moon_test_one(
     test => 'scalar',
-    meth => \&ACME::AsciiEmoji::shy,
+    meth => \&Acme::AsciiEmoji::shy,
     expected => '(๑•́ ₃ •̀๑)',
 );
 
 moon_test_one(
     test => 'scalar',
-    meth => \&ACME::AsciiEmoji::fly_away,
+    meth => \&Acme::AsciiEmoji::fly_away,
     expected => '⁽⁽ଘ( ˊᵕˋ )ଓ⁾⁾',
 );
 
 moon_test_one(
     test => 'scalar',
-    meth => \&ACME::AsciiEmoji::careless,
+    meth => \&Acme::AsciiEmoji::careless,
     expected => '◔_◔',
 );
 
 moon_test_one(
     test => 'scalar',
-    meth => \&ACME::AsciiEmoji::love,
+    meth => \&Acme::AsciiEmoji::love,
     expected => '♥‿♥',
 );
 
 moon_test_one(
     test => 'scalar',
-    meth => \&ACME::AsciiEmoji::touchy,
+    meth => \&Acme::AsciiEmoji::touchy,
     expected => 'ԅ(≖‿≖ԅ)',
 );
 
 moon_test_one(
     test => 'scalar',
-    meth => \&ACME::AsciiEmoji::robot,
+    meth => \&Acme::AsciiEmoji::robot,
     expected => '{•̃_•̃}',
 );
 
 moon_test_one(
     test => 'scalar',
-    meth => \&ACME::AsciiEmoji::seal,
+    meth => \&Acme::AsciiEmoji::seal,
     expected => '(ᵔᴥᵔ)',
 );
 
 moon_test_one(
     test => 'scalar',
-    meth => \&ACME::AsciiEmoji::questionable,
+    meth => \&Acme::AsciiEmoji::questionable,
     expected => '(Ծ‸ Ծ)',
 );
 
 moon_test_one(
     test => 'scalar',
-    meth => \&ACME::AsciiEmoji::winning,
+    meth => \&Acme::AsciiEmoji::winning,
     expected => '(•̀ᴗ•́)و ̑̑',
 );
 
 moon_test_one(
     test => 'scalar',
-    meth => \&ACME::AsciiEmoji::zombie,
+    meth => \&Acme::AsciiEmoji::zombie,
     expected => '[¬º-°]¬',
 );
 
 moon_test_one(
     test => 'scalar',
-    meth => \&ACME::AsciiEmoji::pointing,
+    meth => \&Acme::AsciiEmoji::pointing,
     expected => '(☞ﾟヮﾟ)☞',
 );
 
 moon_test_one(
     test => 'scalar',
-    meth => \&ACME::AsciiEmoji::chasing,
+    meth => \&Acme::AsciiEmoji::chasing,
     expected => "''⌐(ಠ۾ಠ)¬'''",
 );
 

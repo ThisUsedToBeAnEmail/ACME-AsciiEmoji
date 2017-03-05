@@ -1,4 +1,4 @@
-ACME-AsciiEmoji
+Acme-AsciiEmoji
 
 The README is used to introduce the module and provide instructions on
 how to install the module, any machine dependencies it may have (for
@@ -26,21 +26,21 @@ SUPPORT AND DOCUMENTATION
 After installing, you can find documentation for this module with the
 perldoc command.
 
-    perldoc ACME::AsciiEmoji
+    perldoc Acme::AsciiEmoji
 
 You can also look for information at:
 
     RT, CPAN's request tracker (report bugs here)
-        http://rt.cpan.org/NoAuth/Bugs.html?Dist=ACME-AsciiEmoji
+        http://rt.cpan.org/NoAuth/Bugs.html?Dist=Acme-AsciiEmoji
 
     AnnoCPAN, Annotated CPAN documentation
-        http://annocpan.org/dist/ACME-AsciiEmoji
+        http://annocpan.org/dist/Acme-AsciiEmoji
 
     CPAN Ratings
-        http://cpanratings.perl.org/d/ACME-AsciiEmoji
+        http://cpanratings.perl.org/d/Acme-AsciiEmoji
 
     Search CPAN
-        http://search.cpan.org/dist/ACME-AsciiEmoji/
+        http://search.cpan.org/dist/Acme-AsciiEmoji/
 
 
 LICENSE AND COPYRIGHT

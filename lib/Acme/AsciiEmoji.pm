@@ -1,4 +1,4 @@
-package ACME::AsciiEmoji;
+package Acme::AsciiEmoji;
 
 use strict;
 use warnings;
@@ -190,7 +190,7 @@ our @EXPORT_OK = keys %EMOJI;
 
 =head1 NAME
 
-ACME::AsciiEmoji - <--{ 
+Acme::AsciiEmoji - <--{ 
 
 =head1 VERSION
 
@@ -203,7 +203,7 @@ Version 0.01
 
 =head1 SYNOPSIS
 
-    use ACME::AsciiEmoji;
+    use Acme::AsciiEmoji;
     ...
     print innocent;
     # ʘ‿ʘ
@@ -876,14 +876,14 @@ Robert Acock, C<< <thisusedtobeanemail at gmail.com> >>
 =head1 BUGS
 
 Please report any bugs or feature requests to C<bug-acme-asciiemoji at rt.cpan.org>, or through
-the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=ACME-AsciiEmoji>.  I will be notified, and then you'll
+the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Acme-AsciiEmoji>.  I will be notified, and then you'll
 automatically be notified of progress on your bug as I make changes.
 
 =head1 SUPPORT
 
 You can find documentation for this module with the perldoc command.
 
-    perldoc ACME::AsciiEmoji
+    perldoc Acme::AsciiEmoji
 
 
 You can also look for information at:
@@ -892,19 +892,19 @@ You can also look for information at:
 
 =item * RT: CPAN's request tracker (report bugs here)
 
-L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=ACME-AsciiEmoji>
+L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=Acme-AsciiEmoji>
 
 =item * AnnoCPAN: Annotated CPAN documentation
 
-L<http://annocpan.org/dist/ACME-AsciiEmoji>
+L<http://annocpan.org/dist/Acme-AsciiEmoji>
 
 =item * CPAN Ratings
 
-L<http://cpanratings.perl.org/d/ACME-AsciiEmoji>
+L<http://cpanratings.perl.org/d/Acme-AsciiEmoji>
 
 =item * Search CPAN
 
-L<http://search.cpan.org/dist/ACME-AsciiEmoji/>
+L<http://search.cpan.org/dist/Acme-AsciiEmoji/>
 
 =back
 
@@ -952,4 +952,4 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 =cut
 
-1;    # End of ACME::AsciiEmoji
+1;    # End of Acme::AsciiEmoji

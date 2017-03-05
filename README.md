@@ -1,6 +1,6 @@
 # NAME
 
-ACME::AsciiEmoji - Ascii Emoji's!
+Acme::AsciiEmoji - Ascii Emoji's!
 
 # VERSION
 
@@ -10,7 +10,7 @@ our $VERSION = '0.01';
 
 # SYNOPSIS
 
-    use ACME::AsciiEmoji;
+    use Acme::AsciiEmoji;
     ...
     print innocent;
     # ʘ‿ʘ
@@ -320,32 +320,32 @@ Robert Acock, `<thisusedtobeanemail at gmail.com>`
 # BUGS
 
 Please report any bugs or feature requests to `bug-acme-asciiemoji at rt.cpan.org`, or through
-the web interface at [http://rt.cpan.org/NoAuth/ReportBug.html?Queue=ACME-AsciiEmoji](http://rt.cpan.org/NoAuth/ReportBug.html?Queue=ACME-AsciiEmoji).  I will be notified, and then you'll
+the web interface at [http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Acme-AsciiEmoji](http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Acme-AsciiEmoji).  I will be notified, and then you'll
 automatically be notified of progress on your bug as I make changes.
 
 # SUPPORT
 
 You can find documentation for this module with the perldoc command.
 
-    perldoc ACME::AsciiEmoji
+    perldoc Acme::AsciiEmoji
 
 You can also look for information at:
 
 - RT: CPAN's request tracker (report bugs here)
 
-    [http://rt.cpan.org/NoAuth/Bugs.html?Dist=ACME-AsciiEmoji](http://rt.cpan.org/NoAuth/Bugs.html?Dist=ACME-AsciiEmoji)
+    [http://rt.cpan.org/NoAuth/Bugs.html?Dist=Acme-AsciiEmoji](http://rt.cpan.org/NoAuth/Bugs.html?Dist=Acme-AsciiEmoji)
 
 - AnnoCPAN: Annotated CPAN documentation
 
-    [http://annocpan.org/dist/ACME-AsciiEmoji](http://annocpan.org/dist/ACME-AsciiEmoji)
+    [http://annocpan.org/dist/Acme-AsciiEmoji](http://annocpan.org/dist/Acme-AsciiEmoji)
 
 - CPAN Ratings
 
-    [http://cpanratings.perl.org/d/ACME-AsciiEmoji](http://cpanratings.perl.org/d/ACME-AsciiEmoji)
+    [http://cpanratings.perl.org/d/Acme-AsciiEmoji](http://cpanratings.perl.org/d/Acme-AsciiEmoji)
 
 - Search CPAN
 
-    [http://search.cpan.org/dist/ACME-AsciiEmoji/](http://search.cpan.org/dist/ACME-AsciiEmoji/)
+    [http://search.cpan.org/dist/Acme-AsciiEmoji/](http://search.cpan.org/dist/Acme-AsciiEmoji/)
 
 # ACKNOWLEDGEMENTS
 

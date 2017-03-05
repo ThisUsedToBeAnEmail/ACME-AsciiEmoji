@@ -7,7 +7,7 @@ use Test::More;
 plan tests => 1;
 
 BEGIN {
-    use_ok( 'ACME::AsciiEmoji' ) || print "Bail out!\n";
+    use_ok( 'Acme::AsciiEmoji' ) || print "Bail out!\n";
 }
 
-diag( "Testing ACME::AsciiEmoji $ACME::AsciiEmoji::VERSION, Perl $], $^X" );
+diag( "Testing Acme::AsciiEmoji $Acme::AsciiEmoji::VERSION, Perl $], $^X" );
