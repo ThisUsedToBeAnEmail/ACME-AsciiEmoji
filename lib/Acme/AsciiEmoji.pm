@@ -4,9 +4,10 @@ use strict;
 use warnings;
 use Exporter::Shiny;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
-my %EMOJI = (
+use feature qw/state/;
+state $EMOJI = {
     innocent    => [ 202, 152, 226, 128, 191, 202, 152 ],
     disapproval => [ 224, 178, 160, 32,  95,  224, 178, 160 ],
     table_flip => [
@@ -183,10 +184,10 @@ my %EMOJI = (
         39,  39,  226, 140, 144, 40,  224, 178, 160, 219,
         190, 224, 178, 160, 41,  194, 172, 39,  39,  39
     ],
-);
+};
 
-our @EXPORT    = keys %EMOJI;
-our @EXPORT_OK = keys %EMOJI;
+our @EXPORT    = keys %{ $EMOJI };
+our @EXPORT_OK = keys %{ $EMOJI };
 
 =head1 NAME
 
@@ -215,8 +216,7 @@ Version 0.01
 =cut
 
 sub ascii_emoji {
-    my $emoj = $EMOJI{ $_[0] };
-    return pack( 'A1' x scalar @{$emoj}, map { chr($_) } @{$emoj} );
+    return pack( 'C*', @{ $EMOJI->{ $_[0] } } );
 }
 
 =head2 innocent

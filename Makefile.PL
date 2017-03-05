@@ -23,6 +23,7 @@ WriteMakefile(
         'Exporter::Tiny' => 0.044,
         'strict' => 0,
         'warnings' => 0,
+        'feature' => 0,
     },
     dist  => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean => { FILES => 'Acme-AsciiEmoji-*' },
