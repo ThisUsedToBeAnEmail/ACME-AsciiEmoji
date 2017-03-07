@@ -190,7 +190,7 @@ our @EXPORT_OK = keys %{$EMOJI};
 
 =head1 NAME
 
-Acme::AsciiEmoji - <--{ 
+Acme::AsciiEmoji - Ascii Emoji's 
 
 =head1 VERSION
 
