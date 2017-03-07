@@ -4,7 +4,7 @@ Acme::AsciiEmoji - <--{
 
 # VERSION
 
-Version 0.02
+Version 0.03
 
 # SYNOPSIS
 
@@ -310,6 +310,21 @@ chasing / running away
 
 (๑•́ ₃ •̀๑) 
 shy 
+
+## okay
+
+( •\_•)
+okay..
+
+## put\_sunglasses\_on
+
+( •\_•)>⌐■-■
+Put Sunglasses on.
+
+## sunglasses 
+
+(⌐■\_■)
+sunglasses
 
 # AUTHOR
 

@@ -1,5 +1,7 @@
 use Moonshine::Test qw/:all/;
 use Acme::AsciiEmoji;
+use strict;
+use warnings;
 
 moon_test_one(
     test => 'scalar',
@@ -10,7 +12,7 @@ moon_test_one(
 moon_test_one(
     test => 'scalar',
     meth => \&Acme::AsciiEmoji::disapproval,
-    expected => 'ಠ _ಠ',
+    expected => 'ಠ_ಠ',
 );
 
 moon_test_one(
@@ -82,7 +84,7 @@ moon_test_one(
 moon_test_one(
     test => 'scalar',
     meth => \&Acme::AsciiEmoji::angry,
-    expected => '(╬ ಠ 益ಠ )',
+    expected => '(╬ ಠ益ಠ)',
 );
 
 moon_test_one(
@@ -329,6 +331,24 @@ moon_test_one(
     test => 'scalar',
     meth => \&Acme::AsciiEmoji::chasing,
     expected => "''⌐(ಠ۾ಠ)¬'''",
+);
+
+moon_test_one(
+    test => 'scalar',
+    meth => \&Acme::AsciiEmoji::okay,
+    expected => '( •_•)',
+);
+
+moon_test_one(
+    test => 'scalar',
+    meth => \&Acme::AsciiEmoji::put_sunglasses_on,
+    expected => '( •_•)>⌐■-■',
+);
+
+moon_test_one(
+    test => 'scalar',
+    meth => \&Acme::AsciiEmoji::sunglasses,
+    expected => '(⌐■_■)',
 );
 
 sunrise();
