@@ -351,4 +351,28 @@ moon_test_one(
     expected => '(⌐■_■)',
 );
 
+moon_test_one(
+    test => 'scalar',
+    meth => \&Acme::AsciiEmoji::giving_up,
+    expected => 'o(╥﹏╥)o'
+);
+
+moon_test_one(
+    test => 'scalar',
+    meth => \&Acme::AsciiEmoji::magical,
+    expected => '(ﾉ◕ヮ◕)ﾉ*:・ﾟ✧'
+);
+
+moon_test_one(
+    test => 'scalar',
+    meth => \&Acme::AsciiEmoji::mustach,
+    expected => '( ˇ෴ˇ )',
+);
+
+moon_test_one(
+    test => 'scalar',
+    meth => \&Acme::AsciiEmoji::friends,
+    expected => '(ｏ・_・)ノ”(ᴗ_ ᴗ。)'
+);
+
 sunrise();
