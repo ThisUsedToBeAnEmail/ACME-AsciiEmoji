@@ -1,10 +1,10 @@
 # NAME
 
-Acme::AsciiEmoji - <--{ 
+Acme::AsciiEmoji - Ascii Emoji's 
 
 # VERSION
 
-Version 0.03
+Version 0.04
 
 # SYNOPSIS
 
@@ -325,6 +325,26 @@ Put Sunglasses on.
 
 (⌐■\_■)
 sunglasses
+
+## giving\_up
+
+o(╥﹏╥)o
+Giving Up
+
+## magical
+
+(ﾉ◕ヮ◕)ﾉ\*:・ﾟ✧
+Magical
+
+## mustach
+
+( ˇ෴ˇ )
+Mustach
+
+## friends
+
+(ｏ・\_・)ノ”(ᴗ\_ ᴗ。)
+Friends
 
 # AUTHOR
 
