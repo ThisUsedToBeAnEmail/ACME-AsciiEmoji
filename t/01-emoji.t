@@ -375,4 +375,22 @@ moon_test_one(
     expected => '(ｏ・_・)ノ”(ᴗ_ ᴗ。)'
 );
 
+moon_test_one(
+    test => 'scalar',
+    meth => \&Acme::AsciiEmoji::evil,
+    expected => '(屮｀∀´)屮',
+);
+
+moon_test_one(
+    test => 'scalar',
+    meth => \&Acme::AsciiEmoji::devil,
+    expected => '(◣∀◢)ψ'
+);
+
+moon_test_one(
+    test => 'scalar',
+    meth => \&Acme::AsciiEmoji::salute,
+    expected => '(￣ー￣)ゞ',
+);
+
 sunrise();

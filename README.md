@@ -346,6 +346,21 @@ Mustach
 (ｏ・\_・)ノ”(ᴗ\_ ᴗ。)
 Friends
 
+## evil
+
+(屮｀∀´)屮
+Evil
+
+## devil
+
+(◣∀◢)ψ
+Devil
+
+## salute
+
+(￣ー￣)ゞ
+Salute
+
 # AUTHOR
 
 Robert Acock, `<thisusedtobeanemail at gmail.com>`
